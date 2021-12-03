@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'Starjhol';
+  src: url('../../fonts/Starjhol.ttf');
+}
+
+* {
+  text-align: center;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 100vh;
+}
+
+h1 {
+  font-family: 'Starjhol';
+  color: yellow;
+}
