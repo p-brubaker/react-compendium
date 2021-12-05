@@ -1,10 +1,14 @@
 import './Paginator.css'
 
-function Paginator({ isFirst = true, isLast = false }) {
+function Paginator({ isFirst, isLast, handleClick }) {
   return (
     <div className="paginator">
-      <button style={isFirst ? { color: 'grey' } : {}}>{'<'}</button>
-      <button style={isLast ? { color: 'grey' } : {}}>{'>'}</button>
+      <button onClick={() => handleClick('left')} style={isFirst ? { color: 'grey' } : {}}>
+        {'<'}
+      </button>
+      <button onClick={() => handleClick('right')} style={isLast ? { color: 'grey' } : {}}>
+        {'>'}
+      </button>
     </div>
   )
 }

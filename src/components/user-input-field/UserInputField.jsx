@@ -1,6 +1,6 @@
 import './UserInputField.css'
 
-function UserInputField({ film, searchInput, filter, handleChange }) {
+function UserInputField({ film, searchInput, filter, handleChange, handleSubmit }) {
   const filterOptions = ['people', 'starships', 'planets']
   const films = ['All', 'I', 'II', 'III', 'IV', 'V', 'VI']
 
@@ -14,6 +14,7 @@ function UserInputField({ film, searchInput, filter, handleChange }) {
             value={searchInput}
             onChange={(e) => handleChange(e.target.value, 'searchInput')}
           />
+          <button onClick={handleSubmit}>GO</button>
         </label>
         <label htmlFor="film">
           {'film '}
