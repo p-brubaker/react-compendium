@@ -1,4 +1,6 @@
 import './CharacterCard.css'
+import { mungeCharacterData } from '../../utils/mungeCharacterData'
+
 const staticBoba = {
   name: 'Boba Fett',
   height: '183',
@@ -29,16 +31,6 @@ function CharacterCard({
       <div style={imageStyle} className="character-image"></div>
     </div>
   )
-}
-
-function mungeCharacterData(key, attribute) {
-  const intToRoman = (int) => {
-    return ['I', 'II', 'III', 'IV', 'V', 'VI'][+int - 1]
-  }
-
-  if (key === 'films') {
-    return attribute.map((url) => intToRoman(url[28])).join(', ')
-  } else return attribute
 }
 
 export default CharacterCard

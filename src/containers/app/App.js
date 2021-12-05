@@ -1,30 +1,48 @@
 import './App.css'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import UserInputField from '../../components/user-input-field/UserInputField'
 import CharacterCard from '../../components/character-card/CharacterCard'
+import Paginator from '../../components/paginator/Paginator'
 // import fetchWikiImage from '../../services/fetchWikiImage'
 // import fetchCharacters from '../../services/swapiService'
 
 function App() {
-  useEffect(() => {
-    // async function getImageUrl(name = 'bail organa') {
-    //   const url = await fetchWikiImage(name)
-    //   return url
-    // }
-    // getImageUrl()
-    // async function getCharacters() {
-    //   const res = await fetchCharacters({ type: 'starships' })
-    //   return res
-    // }
-    // proof of concept
-    // works
-    // finish static layout and come back to using these
-  }, [])
+  // input field params
+  const [searchInput, setSearchInput] = useState('')
+  const [film, setFilm] = useState('all')
+  const [filter, setFilter] = useState('people')
+
+  const handleSetCriteria = (value, field) => {
+    if (field === 'searchInput') setSearchInput(value)
+    if (field === 'film') setFilm(value)
+    if (field === 'filter') setFilter(value)
+  }
+
+  // useEffect(() => {
+  //   // async function getImageUrl(name = 'bail organa') {
+  //   //   const url = await fetchWikiImage(name)
+  //   //   return url
+  //   // }
+  //   // getImageUrl()
+  //   // async function getCharacters() {
+  //   //   const res = await fetchCharacters({ type: 'starships' })
+  //   //   return res
+  //   // }
+  //   // proof of concept
+  //   // works
+  //   // finish static layout and come back to using these
+  // }, [])
 
   return (
     <div className="App">
       <h1>Character Compendium</h1>
-      <UserInputField />
+      <UserInputField
+        film={film}
+        searchInput={searchInput}
+        filter={filter}
+        handleChange={handleSetCriteria}
+      />
+      <Paginator />
       <CharacterCard />
     </div>
   )
