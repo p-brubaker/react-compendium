@@ -4,8 +4,9 @@ import { useEffect, useState } from 'react'
 import UserInputField from '../../components/user-input-field/UserInputField'
 import CharacterCard from '../../components/character-card/CharacterCard'
 import Paginator from '../../components/paginator/Paginator'
-// import fetchWikiImage from '../../services/fetchWikiImage'
 import fetchCharacters from '../../services/swapiService'
+import fetchWikiImage from '../../services/fetchWikiImage'
+import mungeCharacter from '../../utils/mungeCharacter'
 
 function App() {
   // input field params
@@ -15,6 +16,7 @@ function App() {
   const [query, setQuery] = useState('')
   const [characters, setCharacters] = useState([])
   const [currentPage, setCurrentPage] = useState(1)
+  const [loading, setLoading] = useState(true)
 
   const handleSetCriteria = (value, field) => {
     if (field === 'searchInput') setSearchInput(value)
@@ -24,6 +26,7 @@ function App() {
 
   const handleSubmit = () => {
     setQuery(searchInput)
+    setSearchInput('')
   }
 
   const handleChangePage = (direction) => {
@@ -34,29 +37,19 @@ function App() {
   useEffect(() => {
     async function getCharacters() {
       const res = await fetchCharacters({ name: query, type: filter })
-      return res
+      const mungedCharacters = res.results.map((character) => mungeCharacter(character, filter))
+      const result = await Promise.all(
+        mungedCharacters.map(async (character) => {
+          const wikiImage = await fetchWikiImage(character.name)
+          character.url = wikiImage.url
+          return character
+        })
+      )
+      setCharacters(result)
+      setLoading(false)
     }
-    if (query) {
-      const newCharacters = getCharacters()
-      setCharacters(newCharacters)
-      setQuery('')
-    } else return
-  }, [query])
-
-  // useEffect(() => {
-  //   // async function getImageUrl(name = 'bail organa') {
-  //   //   const url = await fetchWikiImage(name)
-  //   //   return url
-  //   // }
-  //   // getImageUrl()
-  //   // async function getCharacters() {
-  //   //   const res = await fetchCharacters({ type: 'starships' })
-  //   //   return res
-  //   // }
-  //   // proof of concept
-  //   // works
-  //   // finish static layout and come back to using these
-  // }, [])
+    getCharacters()
+  }, [query, filter])
 
   return (
     <div className="App">
@@ -73,16 +66,9 @@ function App() {
         isFirst={currentPage === 1}
         isLast={currentPage === characters.length}
       />
-      <CharacterCard />
+      {loading ? <p>Loading</p> : <CharacterCard character={characters[currentPage - 1]} />}
     </div>
   )
 }
 
 export default App
-
-// So far we have
-//   The ability to fetch results by page, query, category
-//   The ability to get a url for an image hosted by wikipedia
-
-// Next steps
-//   Rendering static data

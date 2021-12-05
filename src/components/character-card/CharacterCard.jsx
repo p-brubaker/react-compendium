@@ -1,34 +1,22 @@
 import './CharacterCard.css'
-import { mungeCharacterData } from '../../utils/mungeCharacterData'
 
-const staticBoba = {
-  name: 'Boba Fett',
-  height: '183',
-  mass: '78.2',
-  films: [
-    'https://swapi.dev/api/films/2/',
-    'https://swapi.dev/api/films/3/',
-    'https://swapi.dev/api/films/5/',
-  ],
-}
-
-function CharacterCard({
-  attributes = staticBoba,
-  imageUrl = 'https://upload.wikimedia.org/wikipedia/en/3/3e/FettbobaJB.png',
-}) {
-  const imageStyle = { backgroundImage: `url('${imageUrl}')` }
+function CharacterCard({ character }) {
   return (
     <div className="character-card">
       <ul className="attributes">
-        {Object.keys(attributes).map((key) => (
-          <li key={key}>
-            <p>
-              {key}: {mungeCharacterData(key, attributes[key])}
-            </p>
-          </li>
-        ))}
+        {Object.keys(character).map((key) => {
+          return key !== 'url' ? (
+            <li key={key}>
+              <p>
+                {key}: {character[key]}
+              </p>
+            </li>
+          ) : (
+            <></>
+          )
+        })}
       </ul>
-      <div style={imageStyle} className="character-image"></div>
+      <div style={{ backgroundImage: `url('${character.url}')` }} className="character-image"></div>
     </div>
   )
 }
