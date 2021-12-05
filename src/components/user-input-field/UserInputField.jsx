@@ -2,8 +2,9 @@ import './UserInputField.css'
 
 function UserInputField() {
   const criteria = { filter: 'people', films: 'all', sortBy: 'Asc', search: '' }
-  const filterOptions = ['people', 'vehicles', 'planets']
+  const filterOptions = ['people', 'starships', 'planets']
   const films = ['All', 'I', 'II', 'III', 'IV', 'V', 'VI']
+
   return (
     <div className="user-input-field">
       <div className="input-field-top">
@@ -31,13 +32,6 @@ function UserInputField() {
                 {choice.toUpperCase()}
               </option>
             ))}
-          </select>
-        </label>
-        <label htmlFor="sort-by">
-          {'sort by '}
-          <select name="sort-by" value="asc">
-            <option value="asc">asc</option>
-            <option value="desc">desc</option>
           </select>
         </label>
       </div>
