@@ -20,7 +20,7 @@ function UserInputField({ film, searchInput, filter, handleChange, handleSubmit 
           {'film '}
           <select name="film" value={film} onChange={(e) => handleChange(e.target.value, 'film')}>
             {films.map((film, i) => (
-              <option key={film} value={i + 1}>
+              <option key={film} value={i}>
                 {film}
               </option>
             ))}

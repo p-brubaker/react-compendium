@@ -1,9 +1,12 @@
+import fetchByProxy from './fetchByProxy'
+
 async function fetchCharacters({ type, query, page }) {
   let url = `https://swapi.dev/api/${type}`
-  if (query) url += `?search=${query}`
-  if (page) url += `?page=${page}`
+  const params = {}
+  if (query) params.search = query
+  if (page) params.page = page
 
-  const res = await fetch(url)
+  const res = await fetchByProxy({ url, params, method: 'GET' })
   const json = await res.json()
   return json
 }
