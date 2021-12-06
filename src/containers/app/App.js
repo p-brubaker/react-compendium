@@ -9,7 +9,6 @@ import fetchWikiImage from '../../services/fetchWikiImage'
 import mungeCharacter from '../../utils/mungeCharacter'
 
 function App() {
-  // input field params
   const [searchInput, setSearchInput] = useState('')
   const [film, setFilm] = useState('all')
   const [filter, setFilter] = useState('people')
@@ -17,6 +16,7 @@ function App() {
   const [characters, setCharacters] = useState([])
   const [currentPage, setCurrentPage] = useState(1)
   const [loading, setLoading] = useState(true)
+  const [nextResultsPage, setNextResultsPage] = useState('')
 
   const handleSetCriteria = (value, field) => {
     if (field === 'searchInput') setSearchInput(value)
@@ -35,8 +35,30 @@ function App() {
   }
 
   useEffect(() => {
+    async function preFetchCharacters() {
+      const nextBatch = await fetch(nextResultsPage)
+      const json = await nextBatch.json()
+      setNextResultsPage(json.next)
+      const mungedCharacters = json.results.map((character) => mungeCharacter(character, filter))
+      const result = await Promise.all(
+        mungedCharacters.map(async (character) => {
+          const wikiImage = await fetchWikiImage(character.name)
+          character.url = wikiImage.url
+          return character
+        })
+      )
+      setCharacters((prev) => [...prev, ...result])
+    }
+    if (currentPage === characters.length - 1 && nextResultsPage) {
+      preFetchCharacters()
+    }
+  }, [currentPage])
+
+  useEffect(() => {
     async function getCharacters() {
+      setLoading(true)
       const res = await fetchCharacters({ name: query, type: filter })
+      setNextResultsPage(res.next)
       const mungedCharacters = res.results.map((character) => mungeCharacter(character, filter))
       const result = await Promise.all(
         mungedCharacters.map(async (character) => {
@@ -45,6 +67,8 @@ function App() {
           return character
         })
       )
+      setLoading(true)
+      setCurrentPage(1)
       setCharacters(result)
       setLoading(false)
     }

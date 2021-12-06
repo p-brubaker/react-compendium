@@ -1,4 +1,5 @@
 import './CharacterCard.css'
+import notAvailable from '../../assets/not_available.jpeg'
 
 function CharacterCard({ character }) {
   return (
@@ -16,7 +17,14 @@ function CharacterCard({ character }) {
           )
         })}
       </ul>
-      <div style={{ backgroundImage: `url('${character.url}')` }} className="character-image"></div>
+      <div
+        style={{
+          backgroundImage: `url('${
+            character.url !== 'image not available' ? character.url : notAvailable
+          }')`,
+        }}
+        className="character-image"
+      ></div>
     </div>
   )
 }
