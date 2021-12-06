@@ -8,7 +8,6 @@ import fetchCharacters from '../../services/swapiService'
 import fetchWikiImage from '../../services/fetchWikiImage'
 import mungeCharacter from '../../utils/mungeCharacter'
 import { appearedInFilm } from '../../utils/helpers'
-import fetchByProxy from '../../services/fetchByProxy'
 
 function App() {
   const [searchInput, setSearchInput] = useState('')
@@ -61,7 +60,7 @@ function App() {
 
   useEffect(() => {
     async function preFetchCharacters() {
-      const nextBatch = await fetchByProxy({ url: nextResultsPage, method: 'GET' })
+      const nextBatch = await fetch(nextResultsPage)
       const json = await nextBatch.json()
       setNextResultsPage(json.next)
       const mungedCharacters = json.results.map((character) => mungeCharacter(character, filter))
