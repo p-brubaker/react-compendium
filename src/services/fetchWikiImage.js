@@ -7,7 +7,7 @@ export default async function fetchWikiImage(name) {
       .join('_')
 
   // const wikiUrl = `https://en.wikipedia.org/wiki/${fixName(name)}`
-  const url = `https://proxy-fetch.herokuapp.com/puppeteer?name=${fixName(name)}`
+  const url = `https://glacial-journey-79252.herokuapp.com/puppeteer?name=${fixName(name)}`
   // const url = `http://localhost:7890/puppeteer?name=${fixName(name)}`
 
   // const res = await fetch(url)
