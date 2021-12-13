@@ -64,13 +64,11 @@ function App() {
       const json = await nextBatch.json()
       setNextResultsPage(json.next)
       const mungedCharacters = json.results.map((character) => mungeCharacter(character, filter))
-      const result = await Promise.all(
-        mungedCharacters.map(async (character) => {
-          const wikiImage = await fetchWikiImage(character.name)
-          character.url = wikiImage.url
-          return character
-        })
-      )
+      const result = mungedCharacters.map((character) => {
+        const wikiImage = fetchWikiImage(character.name)
+        character.url = wikiImage
+        return character
+      })
       setCharacters((prev) => [...prev, ...result])
       if (film !== 'all') {
         const newCharactersByFilm = result.filter((character) => {
@@ -96,13 +94,13 @@ function App() {
       const res = await fetchCharacters({ name: query, type: filter })
       setNextResultsPage(res.next)
       const mungedCharacters = res.results.map((character) => mungeCharacter(character, filter))
-      const result = await Promise.all(
-        mungedCharacters.map(async (character) => {
-          const wikiImage = await fetchWikiImage(character.name)
-          character.url = wikiImage.url
-          return character
-        })
-      )
+
+      const result = mungedCharacters.map((character) => {
+        const wikiImage = fetchWikiImage(character.name)
+        character.url = wikiImage
+        return character
+      })
+
       setLoading(true)
       setCurrentPage(1)
       setCharacters(result)

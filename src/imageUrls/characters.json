@@ -1,0 +1,330 @@
+[
+  {
+    "name": "Luke Skywalker",
+    "url": "https://upload.wikimedia.org/wikipedia/en/9/9b/Luke_Skywalker.png"
+  },
+  {
+    "name": "C-3PO",
+    "url": "https://upload.wikimedia.org/wikipedia/en/5/5c/C-3PO_droid.png"
+  },
+  {
+    "name": "R2-D2",
+    "url": "https://upload.wikimedia.org/wikipedia/en/3/39/R2-D2_Droid.png"
+  },
+  {
+    "name": "Darth Vader",
+    "url": "https://upload.wikimedia.org/wikipedia/en/0/0b/Darth_Vader_in_The_Empire_Strikes_Back.jpg"
+  },
+  {
+    "name": "Leia Organa",
+    "url": "https://upload.wikimedia.org/wikipedia/en/1/1b/Princess_Leia%27s_characteristic_hairstyle.jpg"
+  },
+  {
+    "name": "Owen Lars",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/1200px-Star_Wars_Logo.svg.png"
+  },
+  {
+    "name": "Beru Whitesun lars",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/1200px-Star_Wars_Logo.svg.png"
+  },
+  {
+    "name": "R5-D4",
+    "url": "image not available"
+  },
+  {
+    "name": "Biggs Darklighter",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Rogue_Squadron_Pilot_Outfit.jpg/1200px-Rogue_Squadron_Pilot_Outfit.jpg"
+  },
+  {
+    "name": "Obi-Wan Kenobi",
+    "url": "https://upload.wikimedia.org/wikipedia/en/3/32/Ben_Kenobi.png"
+  },
+  {
+    "name": "Anakin Skywalker",
+    "url": "https://upload.wikimedia.org/wikipedia/en/0/0b/Darth_Vader_in_The_Empire_Strikes_Back.jpg"
+  },
+  {
+    "name": "Wilhuff Tarkin",
+    "url": "https://upload.wikimedia.org/wikipedia/en/5/5a/Grand_Moff_Tarkin.png"
+  },
+  {
+    "name": "Chewbacca",
+    "url": "https://upload.wikimedia.org/wikipedia/en/1/12/Chewbaca_%28Peter_Mayhew%29.png"
+  },
+  {
+    "name": "Han Solo",
+    "url": "https://upload.wikimedia.org/wikipedia/en/b/be/Han_Solo_depicted_in_promotional_image_for_Star_Wars_%281977%29.jpg"
+  },
+  {
+    "name": "Greedo",
+    "url": "https://upload.wikimedia.org/wikipedia/en/d/d0/GreedoStarWars.jpg"
+  },
+  {
+    "name": "Jabba Desilijic Tiure",
+    "url": "https://upload.wikimedia.org/wikipedia/en/5/53/Jabba_the_Hutt_in_Return_of_the_Jedi_%281983%29.png"
+  },
+  {
+    "name": "Wedge Antilles",
+    "url": "https://upload.wikimedia.org/wikipedia/en/4/41/Wedge_Antilles-Denis_Lawson-Star_Wars_%281977%29.jpg"
+  },
+  {
+    "name": "Jek Tono Porkins",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/1200px-Star_Wars_Logo.svg.png"
+  },
+  {
+    "name": "Yoda",
+    "url": "https://upload.wikimedia.org/wikipedia/en/9/9b/Yoda_Empire_Strikes_Back.png"
+  },
+  {
+    "name": "Palpatine",
+    "url": "https://upload.wikimedia.org/wikipedia/en/8/8f/Emperor_RotJ.png"
+  },
+  {
+    "name": "Boba Fett",
+    "url": "https://upload.wikimedia.org/wikipedia/en/3/3e/FettbobaJB.png"
+  },
+  {
+    "name": "IG-88",
+    "url": "image not available"
+  },
+  {
+    "name": "Bossk",
+    "url": "image not available"
+  },
+  {
+    "name": "Lando Calrissian",
+    "url": "https://upload.wikimedia.org/wikipedia/en/c/cb/Lando6-2.jpg"
+  },
+  {
+    "name": "Lobot",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/1200px-Star_Wars_Logo.svg.png"
+  },
+  {
+    "name": "Ackbar",
+    "url": "image not available"
+  },
+  {
+    "name": "Mon Mothma",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/1200px-Star_Wars_Logo.svg.png"
+  },
+  {
+    "name": "Arvel Crynyd",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/1200px-Star_Wars_Logo.svg.png"
+  },
+  {
+    "name": "Wicket Systri Warrick",
+    "url": "image not available"
+  },
+  {
+    "name": "Nien Nunb",
+    "url": "https://upload.wikimedia.org/wikipedia/en/9/9e/Nien_Nunb_Return_of_the_Jedi.jpeg"
+  },
+  {
+    "name": "Qui-Gon Jinn",
+    "url": "https://upload.wikimedia.org/wikipedia/en/a/ad/Qui-Gon_Jinn.png"
+  },
+  {
+    "name": "Nute Gunray",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/1200px-Star_Wars_Logo.svg.png"
+  },
+  {
+    "name": "Finis Valorum",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/1200px-Star_Wars_Logo.svg.png"
+  },
+  {
+    "name": "Padmé Amidala",
+    "url": "https://upload.wikimedia.org/wikipedia/en/e/ee/Amidala.png"
+  },
+  {
+    "name": "Jar Jar Binks",
+    "url": "https://upload.wikimedia.org/wikipedia/en/4/4b/Jjportrait.jpg"
+  },
+  {
+    "name": "Roos Tarpals",
+    "url": "image not available"
+  },
+  {
+    "name": "Rugor Nass",
+    "url": "image not available"
+  },
+  {
+    "name": "Ric Olié",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/1200px-Star_Wars_Logo.svg.png"
+  },
+  {
+    "name": "Watto",
+    "url": "https://upload.wikimedia.org/wikipedia/en/c/c1/Watto_EPI_TPM.png"
+  },
+  {
+    "name": "Sebulba",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/1200px-Star_Wars_Logo.svg.png"
+  },
+  {
+    "name": "Quarsh Panaka",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/1200px-Star_Wars_Logo.svg.png"
+  },
+  {
+    "name": "Shmi Skywalker",
+    "url": "image not available"
+  },
+  {
+    "name": "Darth Maul",
+    "url": "https://upload.wikimedia.org/wikipedia/en/b/bf/Darth_Maul.png"
+  },
+  {
+    "name": "Bib Fortuna",
+    "url": "https://upload.wikimedia.org/wikipedia/en/6/65/Bib_Fortuna_%28screenshot%29.jpg"
+  },
+  {
+    "name": "Ayla Secura",
+    "url": "image not available"
+  },
+  {
+    "name": "Ratts Tyerel",
+    "url": "image not available"
+  },
+  {
+    "name": "Dud Bolt",
+    "url": "https://upload.wikimedia.org/wikipedia/en/4/40/Star_Wars_Phantom_Menace_poster.jpg"
+  },
+  {
+    "name": "Gasgano",
+    "url": "https://upload.wikimedia.org/wikipedia/en/4/40/Star_Wars_Phantom_Menace_poster.jpg"
+  },
+  {
+    "name": "Ben Quadinaros",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/1200px-Star_Wars_Logo.svg.png"
+  },
+  {
+    "name": "Mace Windu",
+    "url": "https://upload.wikimedia.org/wikipedia/en/b/bf/Mace_Windu.png"
+  },
+  {
+    "name": "Ki-Adi-Mundi",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/1200px-Star_Wars_Logo.svg.png"
+  },
+  {
+    "name": "Kit Fisto",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/1200px-Star_Wars_Logo.svg.png"
+  },
+  {
+    "name": "Eeth Koth",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/1200px-Star_Wars_Logo.svg.png"
+  },
+  {
+    "name": "Adi Gallia",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/1200px-Star_Wars_Logo.svg.png"
+  },
+  {
+    "name": "Saesee Tiin",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/1200px-Star_Wars_Logo.svg.png"
+  },
+  {
+    "name": "Yarael Poof",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/1200px-Star_Wars_Logo.svg.png"
+  },
+  {
+    "name": "Plo Koon",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/1200px-Star_Wars_Logo.svg.png"
+  },
+  {
+    "name": "Mas Amedda",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/1200px-Star_Wars_Logo.svg.png"
+  },
+  {
+    "name": "Gregar Typho",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/1200px-Star_Wars_Logo.svg.png"
+  },
+  {
+    "name": "Cordé",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/1200px-Star_Wars_Logo.svg.png"
+  },
+  {
+    "name": "Cliegg Lars",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/1200px-Star_Wars_Logo.svg.png"
+  },
+  {
+    "name": "Poggle the Lesser",
+    "url": "image not available"
+  },
+  {
+    "name": "Luminara Unduli",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/1200px-Star_Wars_Logo.svg.png"
+  },
+  {
+    "name": "Barriss Offee",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/1200px-Star_Wars_Logo.svg.png"
+  },
+  {
+    "name": "Dormé",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/1200px-Star_Wars_Logo.svg.png"
+  },
+  {
+    "name": "Dooku",
+    "url": "https://upload.wikimedia.org/wikipedia/en/5/58/Count_Dooku_%28Christopher_Lee%29.png"
+  },
+  {
+    "name": "Bail Prestor Organa",
+    "url": "https://upload.wikimedia.org/wikipedia/en/d/db/BailOrgana.jpeg"
+  },
+  {
+    "name": "Jango Fett",
+    "url": "https://upload.wikimedia.org/wikipedia/en/5/54/Jango_Fett_%28Star_Wars_character%29.png"
+  },
+  {
+    "name": "Zam Wesell",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/1200px-Star_Wars_Logo.svg.png"
+  },
+  {
+    "name": "Dexter Jettster",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/1200px-Star_Wars_Logo.svg.png"
+  },
+  {
+    "name": "Lama Su",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/1200px-Star_Wars_Logo.svg.png"
+  },
+  {
+    "name": "Taun We",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/1200px-Star_Wars_Logo.svg.png"
+  },
+  {
+    "name": "Jocasta Nu",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/1200px-Star_Wars_Logo.svg.png"
+  },
+  {
+    "name": "R4-P17",
+    "url": "image not available"
+  },
+  {
+    "name": "Wat Tambor",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/1200px-Star_Wars_Logo.svg.png"
+  },
+  {
+    "name": "San Hill",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/1200px-Star_Wars_Logo.svg.png"
+  },
+  {
+    "name": "Shaak Ti",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/1200px-Star_Wars_Logo.svg.png"
+  },
+  {
+    "name": "Grievous",
+    "url": "https://upload.wikimedia.org/wikipedia/en/5/58/GeneralGrievous.png"
+  },
+  {
+    "name": "Tarfful",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/1200px-Star_Wars_Logo.svg.png"
+  },
+  {
+    "name": "Raymus Antilles",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/1200px-Star_Wars_Logo.svg.png"
+  },
+  {
+    "name": "Sly Moore",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/1200px-Star_Wars_Logo.svg.png"
+  },
+  {
+    "name": "Tion Medon",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/1200px-Star_Wars_Logo.svg.png"
+  }
+]
